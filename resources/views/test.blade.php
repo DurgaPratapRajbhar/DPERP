@@ -1,16 +1,5 @@
 @extends('include.master')
 @section('content')
-<div class="content-wrapper">
-<section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
- </section>
     <!-- Main content -->
   <div class="content">
   <div class="box box-default">
@@ -29,7 +18,7 @@
 	             <form action="{{url('insert')}}" method="post">  {{csrf_field()}}
 
 	              <div class="box-body">
-	                <div class="form-group">
+	                <div class="form-group"> 
 	                  <label for="exampleInputEmail1">Email address</label>
 	                  <input type="text" class="form-control" name="name" placeholder="Enter name">
 	                </div>
@@ -47,16 +36,9 @@
 	          </div>
              </div>
            </div>
-         </div>
-     <!-- /.box-header -->   
 
- <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+
+             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>ID</th>
@@ -77,16 +59,17 @@
                 </tbody>
                 
               </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
 
+         </div>
+     <!-- /.box-header -->   
+
+        
 
 
 
       </div>
     </div>
-</div>
+ 
 
 <script>
   $(function () {

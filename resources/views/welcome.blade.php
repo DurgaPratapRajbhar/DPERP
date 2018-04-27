@@ -1,6 +1,6 @@
 @extends('include.master')
 @section('content')
-<div class="content-wrapper">
+ 
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -432,16 +432,9 @@
 
     </section>
     <!-- /.content -->
-  </div>
+ 
 
-
-<script type="text/javascript">
- $(document).ready(function(){
-
-
-         alert("ghhg");
-    });
-</script>
+ 
 @endsection
 
 
