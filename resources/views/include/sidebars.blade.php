@@ -1,3 +1,4 @@
+<?php  use App\Http\Controllers\InitialController; $cl=new InitialController(); ?>
  <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -35,7 +36,7 @@
 
           
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <!-- <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
             <li class="treeview">
               <a href="#"><i class="fa fa-circle-o"></i> Level One
                 <span class="pull-right-container">
@@ -57,7 +58,8 @@
                 </li>
               </ul>
             </li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li> -->
+            <?php echo $cl->user_right_group_menu();?> 
           </ul>
         </li>
        

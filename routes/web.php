@@ -14,9 +14,7 @@
 
 
 // test
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','DashboardController@dashboard');
 
 Route::get('wellcome', function () {
     return view('well');
@@ -110,3 +108,13 @@ Route::get('broker-invoice-register','BillingController@brokerinvoiceregister');
 Route::get('daily-planning','ActivityController@dailyplanning');
 Route::get('lead-capture','ActivityController@leadcapture');
 Route::get('registration-report','ActivityController@registrationreport');
+
+
+
+ /************
+//  Menu List
+******************/
+Route::get('menu-list','MenuController@menulist');
+Route::post('menu-list-add','MenuController@menulist_add');
+Route::get('menu-mapping','MenuController@menu_mapping');
+Route::post('grouprights-add','MenuController@grouprights_add');
