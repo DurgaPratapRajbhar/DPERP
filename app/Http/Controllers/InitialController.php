@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Response;
+ 
+use Session;
+use api_url;
+use Illuminate\Support\Facades\URL;
 class InitialController extends Controller
 {
             public function user_right_group_menu(){
 
-                return    $this->recurtionfn(1,0);
+                return    $this->recurtionfn(Session::get('usergroup'),0);
 
                }
 

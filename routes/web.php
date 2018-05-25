@@ -13,18 +13,15 @@
 
 
 
-// test
-Route::get('/','DashboardController@dashboard');
 
-Route::get('wellcome', function () {
-    return view('well');
-});
-Route::get('test/demo','TestController@testfn');
-// test end
+Route::get('/','LoginController@checklogin');
+Route::post('login','LoginController@login');
+Route::get('logout','LoginController@logout');
 
 
 
-
+Route::group(['middleware' => ['CheckMidd']], function (){
+Route::get('dashboard','DashboardController@dashboard');
 Route::get('employe-master','MastersController@aspxdata');
 Route::post('employee-master_submit','MastersController@employee_master_submit');
 Route::post('employe-master','MastersController@employ_master');
@@ -118,3 +115,5 @@ Route::get('menu-list','MenuController@menulist');
 Route::post('menu-list-add','MenuController@menulist_add');
 Route::get('menu-mapping','MenuController@menu_mapping');
 Route::post('grouprights-add','MenuController@grouprights_add');
+
+});
