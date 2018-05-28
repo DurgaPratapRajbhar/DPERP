@@ -12,7 +12,7 @@ class InitialController extends Controller
 {
             public function user_right_group_menu(){
 
-                return    $this->recurtionfn(Session::get('usergroup'),0);
+                return    $this->recurtionfn(Session::get('groupid'),0);
 
                }
 

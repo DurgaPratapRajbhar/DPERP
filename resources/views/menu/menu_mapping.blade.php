@@ -25,7 +25,7 @@
                       <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Menu Group</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="menu_group_id" name="menu_group_id"  value="1"   required>
+                          <input type="text" class="form-control" id="menu_group_id" name="menu_group_id"  value="2"   required>
                         </div>
                       </div>
 
